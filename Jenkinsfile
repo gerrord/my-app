@@ -1,7 +1,7 @@
 node{
    stage('SCM Checkout'){
      git 'https://github.com/gerrord/my-app.git'
-   }
+    }
    stage('maven-buildstage'){
 
       def mvnHome =  tool name: 'maven3', type: 'maven'   
